@@ -9,10 +9,10 @@ public final class User {
     @Id @GeneratedValue
     private int id;
 
-    @Column
+    @Column(name="firstname")
     private String firstName;
 
-    @Column
+    @Column(name="lastname")
     private String lastName;
 
 
