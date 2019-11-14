@@ -3,7 +3,7 @@
 
 ```
   cd docker_postgre
-  docker build -t pg
+  docker build -t pg .
   docker run --rm -d  -p 5432:5432 --name docker-pg pg 
   cd ..
 ```
