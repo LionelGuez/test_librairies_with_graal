@@ -46,6 +46,9 @@
             <goals>
               <goal>build</goal>
             </goals>
+            <configuration>
+              <uberJar>true</uberJar>
+            </configuration>
           </execution>
         </executions>
       </plugin>
