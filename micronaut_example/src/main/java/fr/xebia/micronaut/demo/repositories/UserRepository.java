@@ -7,4 +7,5 @@ import io.micronaut.data.repository.CrudRepository;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
+    User findByFirstName(String firstName);
 }

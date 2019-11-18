@@ -33,4 +33,9 @@ public class UserController {
         //return "everyone";
         return StreamSupport.stream(userRepository.findAll().spliterator(),false).map(User::toString).collect(Collectors.joining(" ;  "));
     }
+
+    @Get(value="{firstName}", produces = MediaType.TEXT_PLAIN)
+    public String userByName(@PathVariable String firstName){
+        return userRepository.findByFirstName(firstName).getLastName();
+    }
 }
