@@ -1,19 +1,15 @@
 package fr.xebia.quarkus.demo.entities;
 
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
+
 import javax.persistence.*;
 
 @Entity()
 @Table(name="t_user")
-public class User {
+public class User extends PanacheEntity {
 
-    @Id @GeneratedValue
-    private int id;
-
-    @Column(name="firstname")
-    private String firstName;
-
-    @Column(name="lastname")
-    private String lastName;
+    public String firstName;
+    public String lastName;
 
 
     public User() {
@@ -25,36 +21,4 @@ public class User {
 
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
-    }
 }
