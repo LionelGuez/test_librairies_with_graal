@@ -1,7 +1,7 @@
 package fr.xebia.quarkus.demo.controllers;
 
 import fr.xebia.quarkus.demo.entities.User;
-import fr.xebia.quarkus.demo.services.UserService;
+import fr.xebia.quarkus.demo.services.UserRepository;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class UserController {
 
     @Inject
-    private UserService userService;
+    private UserRepository userService;
 
     @POST
     @Produces(MediaType.TEXT_PLAIN)

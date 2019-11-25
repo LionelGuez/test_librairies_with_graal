@@ -8,7 +8,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.transaction.Transactional;
 
 @ApplicationScoped
-public class UserService {
+public class UserRepository {
 
     @Transactional
     public void createUser(User user){
@@ -18,5 +18,6 @@ public class UserService {
     public List<User> allUsers(){
         return User.listAll();
     }
-
 }
+
+
