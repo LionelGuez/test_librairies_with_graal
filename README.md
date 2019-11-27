@@ -15,7 +15,7 @@ You can choose other name (as pg or docker-pg), if you want, but you have to be 
 To create a docker with native image : 
 
 ```
-  cd micronaut_example
+  cd projects/micronaut_example
   mvn clean install ;  docker build -t micronaut_example .
 ```
 
@@ -34,7 +34,7 @@ To stop the image:
 To create a docker with native image : 
 
 ```
-  cd quarkus_example
+  cd projects/quarkus_example
   mvn package -Pnative -Dnative-image.docker-build=true
   docker build -f src/main/docker/Dockerfile.native -t quarkus_example .
 ```
