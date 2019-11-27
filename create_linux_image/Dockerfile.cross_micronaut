@@ -1,0 +1,6 @@
+FROM oracle/graalvm-ce:19.2.0.1 as graalvm
+VOLUME /home/app/micronaut-example
+WORKDIR /home/app/micronaut-example
+RUN gu install native-image
+ENTRYPOINT ["/bin/sh", "-c", "native-image --no-server -cp /home/app/micronaut-example/micronaut-example-*.jar"]
+
