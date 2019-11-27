@@ -11,6 +11,7 @@ bash ./build_image.sh
 ## Start the image 
 
 *Warning* : the 'docker-pg' must be running (see README.md of the parent folder)
+
 *Warning* : the port 8080 must be free (but you can change the port in changing the following command)
 
 To start the image, use the following command : 
