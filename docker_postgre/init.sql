@@ -1,5 +1,6 @@
 CREATE TABLE t_user (
   id INT PRIMARY KEY,
-  last_name VARCHAR(50),
-  first_name VARCHAR(50)
+  lastname VARCHAR(50),
+  firstname VARCHAR(50)
 );
+CREATE SEQUENCE hibernate_sequence START 1;

@@ -57,7 +57,7 @@ http://localhost:8080/users
 
 use :
 ```
-curl -XPOST http://localhost:8080/user/guez/lionel   -H "Content-Type: application/json"
+curl -XPOST http://localhost:8080/users/guez/lionel   -H "Content-Type: application/json"
 ```
 
 ## To create an image with all project

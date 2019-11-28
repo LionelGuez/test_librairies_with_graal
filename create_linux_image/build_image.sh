@@ -41,7 +41,7 @@ mvn clean install
 cp ./target/micronaut-example*.jar  $DIR/docker_image/jars
 cd $DIR
 docker build --file ./Dockerfile.cross_micronaut -t cross_compile .
-docker run  -v $( pwd )/../micronaut_example/target:/home/app/micronaut-example cross_compile
+docker run  -v $( pwd )/../projects/micronaut_example/target:/home/app/micronaut-example cross_compile
 ls ../projects/micronaut_example/target/micronaut-example
 cp ../projects/micronaut_example/target/micronaut-example ./docker_image/exes/
 

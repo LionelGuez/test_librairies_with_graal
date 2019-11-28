@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.stream.Collectors;
 
 
-@Path("user")
+@Path("users")
 public class UserController {
 
     @Inject

@@ -21,4 +21,8 @@ public class User extends PanacheEntity {
 
     }
 
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + "\n";
+    }
 }
